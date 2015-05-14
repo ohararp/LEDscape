@@ -60,8 +60,7 @@ Debian - RevC (2015-03-01)
 
 	git clone git://github.com/Yona-Appletree/LEDscape
 	cd LEDscape
-	cp /boot/dtbs/3.8.13-bone70/am335x-boneblack.dtb{,.preledscape_bk}
-	cp am335x-boneblack.dtb /boot/dtbs/3.8.13-bone70/
+	sudo ./dts/patch_dts.sh
 	modprobe uio_pruss	
 	vi /boot/uEnv.txt
 	reboot
